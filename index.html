@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid" id="grid">
+            <div class="profile">
+                <div class="profile-main">
+                    <img class="profile-main-img" src="./images/image-jeremy.png" alt="profile-image">
+                    <div class="profile-main-title">
+                        <p class="profile-main-title-label">Report for</p>
+                        <h1 class="profile-main-title-name">Jeremy Robson</h1>
+                    </div>
+                </div>
+                <div class="profile-settings">
+
+
+                    <ul>
+                        <li class="clickable">
+                            <input class="d-none" type="radio" id="daily" name="timeframe" value="daily" checked>
+                            <label for="contactChoice1">Daily</label>
+                        </li>
+                        <li class="clickable">
+                            <input class="d-none" type="radio" id="weekly" name="timeframe" value="weekly">
+                            <label for="contactChoice2">Weekly</label>
+
+                        </li>
+                        <li class="clickable">
+                            <input class="d-none" type="radio" id="monthly" name="timeframe" value="monthly">
+                            <label for="contactChoice3">Monthly</label>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <template id="template">
+                <div class="card" id="card">
+                    <div class="card-head" id="card-head"></div>
+                    <div class="card-body" id="card-body">
+                        <div class="card-body-title">
+                            <span id="title">work</span>
+                            <span class="clickable ellipsis"><svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5
+                                0 0 1 0-5Z" fill-rule="evenodd"/></svg></span>
+                        </div>
+                        <div class="card-body-current" id="current">32hrs</div>
+                        <div class="card-body-previous" id="previous">Last week 36hrs</div>
+                    </div>
+                </div>
+            </template>
+
+
+        </div>
+    </div>
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/josh7bit" target="_blank">Josh7bit</a>.
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
